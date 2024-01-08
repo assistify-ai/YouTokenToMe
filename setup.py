@@ -33,7 +33,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/vkcom/youtokentome",
     python_requires=">=3.5.0",
-    install_requires=["Click>=7.0"],
+    install_requires=["Click>=7.0", "Cython>=0.29.34", "setuptools>=32.0.0"],
     entry_points={"console_scripts": ["yttm = youtokentome.yttm_cli:main"]},
     author="Ivan Belonogov",
     license="MIT",
@@ -51,4 +51,3 @@ setup(
     ],
     ext_modules=cythonize(extensions),
 )
-
